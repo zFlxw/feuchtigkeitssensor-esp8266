@@ -47,7 +47,7 @@ void loop() {
 void handleServerRouting() {
   server.on("/", HTTP_GET, []() {
       String response = "";
-      response += "{\"d\":\"" + String(sensorValue + " \"}";
+      response += "{\"d\":\"" + String(sensorValue) + " \"}";
       server.send(200, F("application/json"), response);
   });
 }
