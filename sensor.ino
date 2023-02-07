@@ -2,8 +2,8 @@
 #include <ESP8266WiFi.h>
 #include <ESP8266mDNS.h>
 
-#define HTTPS_PORT 2301
-ESP8266WebServer server(HTTPS_PORT);
+#define HTTP_PORT 2301
+ESP8266WebServer server(HTTP_PORT);
 
 const char* ssid = "your-ssid";
 const char* password = "your-pw";
@@ -21,8 +21,6 @@ void setup() {
       delay(500);
     }
 
-    // Activate mDNS this is used to be able to connect to the server
-    // with local DNS hostmane esp8266.local
     if (MDNS.begin("esp8266")) {
       Serial.println("MDNS responder started");
     }
@@ -38,8 +36,6 @@ void setup() {
 }
 void loop() {
     sensorValue = analogRead(A0);
-    // Serial.print("Moisture = ");
-    // Serial.println(sensorValue);
     delay(500);
     server.handleClient();
 }

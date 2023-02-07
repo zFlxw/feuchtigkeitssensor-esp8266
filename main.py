@@ -7,8 +7,9 @@ from dotenv import load_dotenv
 load_dotenv()
 
 host = os.getenv('HOST')
+port = os.getenv('POST')
 
 while True:
-    res = requests.get(f'http://{host}:2301/')
+    res = requests.get(f'http://{host}:{port}/')
     print(f"Feuchtigkeit: {res.json()['d']}")
     time.sleep(1)
