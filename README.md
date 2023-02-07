@@ -6,7 +6,7 @@ Also, this repository contains a simple python script to access to API endpoint 
 ## 📦 Used Items
 
 -   1x ESP8266-based board (Octopus Board)
--   1x Gravo Moisture Sensor
+-   1x Grove Moisture Sensor
 
 ## 💁‍♂️ How to use?
 
