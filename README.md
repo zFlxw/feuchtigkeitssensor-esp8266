@@ -15,4 +15,4 @@ The moisture sensor will return the resistance, with higher resistance being a m
 
 To make the API work, change the `ssid` and `password` variable to your router's SSID and password.
 
-To use the python script, rename the `.env.example` file and enter your board's IP-adress as `HOST` as well as the defined port from your <a href="/sensor.ino"> as `PORT`. Note: your board's IP-address will be printed to the serial monitor on startup.
+To use the python script, rename the `.env.example` file and enter your board's IP-adress as `HOST` as well as the defined port from your <a href="/sensor.ino">sensor.ino</a> as `PORT`. Note: your board's IP-address will be printed to the serial monitor on startup.
