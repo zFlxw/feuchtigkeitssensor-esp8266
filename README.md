@@ -1,4 +1,4 @@
-# feuchtigkeitssensor-esp8266
+# moisture-sensor-esp8266
 A simple example respository for creating a REST-service on a esp8266-based board. 
 Also, this repository contains a simple python script to access to API endpoint of the board. 
 
